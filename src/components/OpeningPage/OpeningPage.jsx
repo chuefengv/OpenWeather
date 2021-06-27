@@ -9,15 +9,33 @@ export default function OpeningPage({setFirstSearch, weather}) {
 
     const API_KEY = '1364ff82ee89c8513773028b0e6a5191'
 
-    useEffect(()=>{
-      Axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${searchCity},${searchState},${searchCountry}&appid=${API_KEY}`)    
-      .then(res =>{
-          console.log(res.data.list[0]); //every 8 indexes is a new day
-      })
-      .catch(err =>{
-          console.log(err.message);
-      });
-    },[]);
+    
+    function searchWeather(){
+
+        Axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${searchCity},${searchState},${searchCountry}&appid=${API_KEY}`)    
+        .then(res =>{
+            console.log(res.data.list[0]); //every 8 indexes is a new day
+            setFirstSearch(true);
+        })
+        .catch(err =>{
+            console.log(err.message);
+        });        
+    }
+    
+    function handleCity(e){
+        e.preventDefault();
+        setSearchCity(e.target.value);
+    }
+
+    function handleState(e){
+        e.preventDefault();
+        setSearchState(e.target.value);
+    }
+
+    function handleCountry(e){
+        e.preventDefault();
+        setSearchCountry(e.target.value);
+    }
 
     return (
         <div className='opening-wrapper'>
@@ -25,16 +43,17 @@ export default function OpeningPage({setFirstSearch, weather}) {
                 <div className='opening-search-city'>
                     City
                 </div>
-                <input type='text' placeholder='Brooklyn' />
+                <input type='text' placeholder='Brooklyn' onChange={(e)=>handleCity(e)}/>
                 <div className='opening-search-state'>
                     State
                 </div>
-                <input type='text' placeholder='NY' />
+                <input type='text' placeholder='NY' onChange={(e)=>handleState(e)}/>
                 <div className='opening-search-country'>
                     Country
                 </div>
-                <input type='text' placeholder='USA' />
-                <button onClick={()=>setFirstSearch(true)}>Search</button>
+                <input type='text' placeholder='USA' onChange={(e)=>handleCountry(e)}/>
+
+                <button onClick={()=>searchWeather()}>Search</button>
             </div>
         </div>
     )
