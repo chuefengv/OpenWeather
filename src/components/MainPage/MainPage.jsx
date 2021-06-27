@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function MainPage() {
+export default function MainPage({weather}) {
     return (
         <div>
-            Main
+            {weather.currWeather}
         </div>
     )
 }
