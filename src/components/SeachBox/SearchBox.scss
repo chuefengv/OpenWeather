@@ -1,0 +1,11 @@
+.searchbox-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.searchbox-input{
+    border: solid red;
+    width: 350px;
+    display: grid;
+}

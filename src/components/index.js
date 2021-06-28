@@ -1,11 +1,7 @@
-import Searchbar from "./Searchbar/Searchbar";
-import Display from "./Display/Display";
-import OpeningPage from "./OpeningPage/OpeningPage";
-import MainPage from "./MainPage/MainPage";
+import SearchBox from "./SeachBox/SearchBox";
+import WeatherFeed from "./WeatherFeed/WeatherFeed";
 
 export{
-    Searchbar,
-    Display,
-    OpeningPage,
-    MainPage,
+    SearchBox,
+    WeatherFeed,
 }

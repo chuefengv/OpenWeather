@@ -11,7 +11,7 @@ h1, h2, h3, h4, a, p {
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
+  -ms-grid-rows: auto 1fr;
+      grid-template-rows: auto 1fr;
 }
 /*# sourceMappingURL=App.css.map */

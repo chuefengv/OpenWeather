@@ -1,8 +1,8 @@
-import React, {useState, useEffect}  from 'react'
+import React, {useState}  from 'react'
 import Axios from 'axios'
-import './OpeningPage.css'
+import './SearchBox.css'
 
-export default function OpeningPage({setFirstSearch, weatherInfo}) {
+export default function SearchBox({weatherInfo}) {
     //zip code being input 
     const [zipcode, setZipcode] = useState(0);
     //flag to check if valid zip code
@@ -13,7 +13,6 @@ export default function OpeningPage({setFirstSearch, weatherInfo}) {
     
         Axios.get(`https://api.openweathermap.org/data/2.5/forecast?zip=${zipcode}&appid=${API_KEY}`)    
         .then(res =>{
-            setFirstSearch(true)
             weatherInfo.setCurrWeather(res.data.list);
             weatherInfo.setCity(res.data.city.name);
         })
@@ -30,11 +29,11 @@ export default function OpeningPage({setFirstSearch, weatherInfo}) {
     }
 
     return (
-        <div className='opening-wrapper'>
-            <div className='opening-searchbox'>
+        <div className='searchbox-wrapper'>
+            <div className='searchbox-input'>
 
                 {wrongInput && <div>Not a Valid Zipcode</div>}
-                <div className='opening-search-city'>
+                <div className='searchbox-input-zip'>
                     <p>Enter Zip Code</p>
                 </div>
                 <input type='text' placeholder='90210' onChange={(e)=>handleZipChange(e)} maxLength="5"/>

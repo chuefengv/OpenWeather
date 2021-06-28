@@ -1,10 +1,8 @@
 import './App.css';
-import Axios from 'axios';
 import {useState} from 'react';
-import {MainPage, OpeningPage} from './components/index';
+import {SearchBox, WeatherFeed} from './components/index';
 function App() {
-  //flag to see if opening a new page
-  const [firstSearch, setFirstSearch] = useState(false);
+
   //state variable to hold city weather information
   const [currWeather, setCurrWeather] = useState([]);
   const [city, setCity] = useState("")
@@ -14,8 +12,8 @@ function App() {
   
   return (
     <div className="container">
-        {!firstSearch && <OpeningPage setFirstSearch={setFirstSearch} weatherInfo={weatherInfo}/>}
-        {firstSearch && <MainPage weatherInfo={weatherInfo}/>}
+        <SearchBox weatherInfo={weatherInfo}/>
+        <WeatherFeed weatherInfo={weatherInfo}/>
     </div>
   );
 }
