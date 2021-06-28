@@ -15,6 +15,7 @@ export default function SearchBox({weatherInfo}) {
         .then(res =>{
             weatherInfo.setCurrWeather(res.data.list);
             weatherInfo.setCity(res.data.city.name);
+            setWrongInput(false);
         })
         .catch(err =>{
             console.log(err.message);
@@ -31,11 +32,11 @@ export default function SearchBox({weatherInfo}) {
     return (
         <div className='searchbox-wrapper'>
             <div className='searchbox-input'>
+                
+                {/* if user enters invalid zipcode, send warning message */}
+                {wrongInput && <p>Not a Valid Zipcode</p>}
 
-                {wrongInput && <div>Not a Valid Zipcode</div>}
-                <div className='searchbox-input-zip'>
-                    <p>Enter Zip Code</p>
-                </div>
+                <p>Enter Zip Code</p>
                 <input type='text' placeholder='90210' onChange={(e)=>handleZipChange(e)} maxLength="5"/>
 
                 <button onClick={()=>searchWeather()}>Search</button>
