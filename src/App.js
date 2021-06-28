@@ -6,13 +6,16 @@ function App() {
   //flag to see if opening a new page
   const [firstSearch, setFirstSearch] = useState(false);
   //state variable to hold city weather information
-  const [currWeather, setCurrWeather] = useState("");
+  const [currWeather, setCurrWeather] = useState([]);
+  const [city, setCity] = useState("")
 
-  const weather = {currWeather, setCurrWeather}
+  //prop object for easy passing
+  const weatherInfo = {currWeather, setCurrWeather, city, setCity}
+  
   return (
     <div className="container">
-        {!firstSearch && <OpeningPage setFirstSearch={setFirstSearch} weather={weather}/>}
-        {firstSearch && <MainPage weather={weather}/>}
+        {!firstSearch && <OpeningPage setFirstSearch={setFirstSearch} weatherInfo={weatherInfo}/>}
+        {firstSearch && <MainPage weatherInfo={weatherInfo}/>}
     </div>
   );
 }
