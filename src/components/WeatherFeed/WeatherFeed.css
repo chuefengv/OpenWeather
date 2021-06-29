@@ -2,9 +2,9 @@
   margin: 90px 0 0 0;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 800px) {
   .weatherfeed-wrapper {
-    margin: 50px 0 0 0;
+    margin: 30px 0 0 0;
   }
 }
 /*# sourceMappingURL=WeatherFeed.css.map */

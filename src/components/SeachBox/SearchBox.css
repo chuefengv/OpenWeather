@@ -5,8 +5,8 @@
 }
 
 .searchbox-desktop-wrapper {
-  -ms-grid-column-align: start;
-      justify-self: start;
+  -ms-grid-column-align: end;
+      justify-self: end;
   position: fixed;
   display: -ms-grid;
   display: grid;
@@ -16,7 +16,7 @@
       grid-template-rows: auto 1fr;
   background-color: rgba(255, 255, 255, 0.65);
   padding: 0 15px 15px 15px;
-  margin: 0 0 10px 10px;
+  margin: 0 10px 10px 0;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   -webkit-box-shadow: #648bb4 0px 20px 30px -10px;

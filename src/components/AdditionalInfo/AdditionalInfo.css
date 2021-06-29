@@ -44,7 +44,7 @@
   text-shadow: 1px 1px black;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 800px) {
   .additional-info-wrapper {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;

@@ -1,4 +1,4 @@
-import React, {useState, useEffect}  from 'react'
+import React, {useState}  from 'react'
 import Axios from 'axios'
 import './SearchBox.css'
 import mGlass from '../../assets/search.svg'
