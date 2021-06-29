@@ -1,0 +1,19 @@
+.location-wrapper {
+  border: solid black;
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+}
+
+.location-city {
+  font-size: 2.25em;
+}
+
+.location-date {
+  font-size: 1.25em;
+}
+
+.location-time {
+  font-size: 1.25em;
+}
+/*# sourceMappingURL=Location.css.map */
