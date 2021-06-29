@@ -1,16 +1,17 @@
 .mobile-feed-wrapper{
     display: grid;
-    grid-template-rows: auto 5fr 2fr 4fr;
-    border: solid yellow;
+    grid-template-rows: auto auto auto 1fr;
     height: 100%;
 }
 
 .mobile-feed-location{
     grid-row: 1/2;
+
 }
 
 .mobile-feed-current-weather{
     grid-row: 2/3;
+
 }
 
 .mobile-feed-hourly-weather{

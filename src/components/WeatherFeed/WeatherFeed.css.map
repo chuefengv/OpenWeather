@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,oBAAoB,CAAA;EAChB,MAAM,EAAE,WAAW;CACtB",
+    "mappings": "",
     "sources": [
         "WeatherFeed.scss"
     ],
