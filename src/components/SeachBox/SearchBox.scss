@@ -1,14 +1,42 @@
 .searchbox-wrapper{
-    border: solid red;
     display: grid;
 }
 
 .searchbox-desktop-wrapper{
-    border: solid blue;
     justify-self: end;
+
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    grid-template-rows: auto 1fr;
 }
 
 .searchbox-mobile-wrapper{
-    border: solid purple;
     justify-self: center;
+
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    grid-template-rows: auto 1fr;
+}
+
+.searchbox-search-button{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    align-self: center;
+    justify-self: center;
+}
+
+.searchbox-input-box{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    align-self: center;
+}
+
+.searchbox-input-instruction{
+    margin: 10px 0 0 0;
+    justify-self: center;
+    grid-column: 1/2;
+
+    &.wrong{
+        color: red;
+    }
 }

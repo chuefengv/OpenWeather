@@ -1,5 +1,4 @@
 .current-weather-wrapper {
-  border: solid pink;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2fr 1fr;

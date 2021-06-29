@@ -1,7 +1,7 @@
 import React from 'react'
 import './CurrentWeather.css'
-export default function CurrentWeather({weatherInfo}) {
 
+export default function CurrentWeather({weatherInfo}) {
 
     return (
         <div className='current-weather-wrapper'>

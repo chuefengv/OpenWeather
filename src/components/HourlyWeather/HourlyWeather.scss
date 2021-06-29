@@ -1,0 +1,13 @@
+.hourly-weather-wrapper{
+    border: solid black;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    max-width: 100vw;
+}
+
+.hourly-weather-temperature{
+    border: solid blue 1px;
+}
+

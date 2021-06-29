@@ -6,17 +6,23 @@ function App() {
 
   //get the current window size, flag to determine if mobile or desktop view
   const [deskMode, setDeskMode] = useState((window.innerWidth>=900) ? true : false);
-  //state variable to hold city weather information
+  //state variable to hold current weather information
   const [currWeather, setCurrWeather] = useState([]);
+  //state variable to hold weekly weather information
+  const [weeklyWeather, setWeeklyWeather] = useState([]);
 
   //prop object for easy passing
-  const weatherInfo = {currWeather, setCurrWeather}
+  const weatherInfo = {currWeather, setCurrWeather, weeklyWeather, setWeeklyWeather}
   const view = {deskMode, setDeskMode}
 
   useEffect(()=>{
-    Axios.get(`https://api.openweathermap.org/data/2.5/weather?zip=90210&appid=1364ff82ee89c8513773028b0e6a5191`)    
+    Axios.get(`https://api.openweathermap.org/data/2.5/weather?zip=90210&appid=2d0e7b3995100b39ed551550fa2ca310`)    
     .then(res =>{
         weatherInfo.setCurrWeather(res.data);
+        return Axios.get(`https://api.openweathermap.org/data/2.5/forecast?zip=90210&appid=2d0e7b3995100b39ed551550fa2ca310`)
+    })
+    .then(res =>{
+        weatherInfo.setWeeklyWeather(res.data.list);
     })
     .catch(err =>{
         console.log(err.message);
