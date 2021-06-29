@@ -24,6 +24,10 @@
   grid-row: 3/4;
 }
 
+.mobile-feed-hourly-weather div h2 {
+  margin: 0 0 0 10px;
+}
+
 .mobile-feed-weekly-weather {
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
