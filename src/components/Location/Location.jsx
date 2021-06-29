@@ -7,8 +7,15 @@ export default function Location({weatherInfo}) {
     const [time, setTime] = useState(0);
 
     useEffect(()=>{
-        setTime(currentDay.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }))
-    })
+        var timerID = setInterval( () => updateTime(), 1000 );
+        return function cleanup() {
+            clearInterval(timerID);
+          };
+    },[time])
+
+    function updateTime(){
+        setTime(currentDay.toLocaleTimeString('en-GB'))
+    }
     
     return (
         <div className='location-wrapper'>
