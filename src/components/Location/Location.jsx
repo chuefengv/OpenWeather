@@ -24,6 +24,7 @@ export default function Location({weatherInfo}) {
         <div className='location-wrapper'>
             <div className='location-city'>{weatherInfo.currWeather.name}</div>
             <div className='location-date'>{daysOfWeek[currentDay.getDay()]}</div>
+            {/* just a small flag so dom doesnt render '0' on refresh */}
             <div className='location-time'>{!time==0 && time}</div>
         </div>
     )

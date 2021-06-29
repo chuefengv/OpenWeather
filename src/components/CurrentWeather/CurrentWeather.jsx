@@ -3,6 +3,7 @@ import './CurrentWeather.css'
 
 export default function CurrentWeather({weatherInfo}) {
 
+    //api returns lower cased description, must capitalize
     function capitalizeWord(word){
         return word.charAt(0).toUpperCase()+word.slice(1);
     }

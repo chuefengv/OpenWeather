@@ -15,6 +15,7 @@ function App() {
   const weatherInfo = {currWeather, setCurrWeather, weeklyWeather, setWeeklyWeather}
   const view = {deskMode, setDeskMode}
 
+  //initialize the data for template data on first load of web page
   useEffect(()=>{
     Axios.get(`https://api.openweathermap.org/data/2.5/weather?zip=90210&appid=2d0e7b3995100b39ed551550fa2ca310`)    
     .then(res =>{

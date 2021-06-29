@@ -46,6 +46,7 @@ export default function SearchBox({weatherInfo, view}) {
                     <input type='text' placeholder='90210' onChange={(e)=>handleZipChange(e)} maxLength="5"/>
                 </div>
 
+                {/* update the data with new api call when pressing button */}
                 <div onClick={()=>searchWeather()} className='searchbox-search-button'>
                     <img src={mGlass} alt='search button'></img>
                 </div>
