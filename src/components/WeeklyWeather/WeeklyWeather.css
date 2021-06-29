@@ -51,15 +51,18 @@
     -ms-grid-rows: auto auto 1fr;
         grid-template-rows: auto auto 1fr;
     background-color: rgba(255, 255, 255, 0.15);
+    margin: 0 0 20px 0;
+    -webkit-box-shadow: #648bb4 0px 20px 30px -10px;
+            box-shadow: #648bb4 0px 20px 30px -10px;
   }
   .weekly-weather-temperature {
     display: -ms-grid;
     display: grid;
-    border-right: white solid 1px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     padding: 10px 0 10px 0;
+    border-bottom: none;
   }
   .weekly-weather-degree {
     -ms-grid-column-align: end;

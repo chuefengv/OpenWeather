@@ -34,13 +34,15 @@
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: auto auto 1fr;
         background-color: rgba(255, 255, 255, 0.15);
+        margin: 0 0 20px 0;
+        box-shadow: rgb(100, 139, 180) 0px 20px 30px -10px;
     }
 
     .weekly-weather-temperature{
         display: grid;
-        border-right: white solid 1px;
         justify-content: center;
         padding: 10px 0 10px 0;
+        border-bottom: none;
     }
 
     .weekly-weather-degree{
