@@ -10,6 +10,7 @@ export default function SearchBox({weatherInfo, view}) {
     const [wrongInput, setWrongInput] = useState(false);
 
     function searchWeather(){
+        //in a real project, api key would be put in ENV VAR
         const API_KEY = '1364ff82ee89c8513773028b0e6a5191'
     
         Axios.get(`https://api.openweathermap.org/data/2.5/forecast?zip=${zipcode}&appid=${API_KEY}`)    

@@ -1,4 +1,5 @@
 import './App.css';
+import Axios from 'axios'
 import {useState, useEffect} from 'react';
 import {SearchBox, WeatherFeed} from './components/index';
 function App() {
@@ -12,6 +13,17 @@ function App() {
   //prop object for easy passing
   const weatherInfo = {currWeather, setCurrWeather, city, setCity}
   const view = {deskMode, setDeskMode}
+
+  useEffect(()=>{
+    Axios.get(`https://api.openweathermap.org/data/2.5/forecast?zip=90210&appid=1364ff82ee89c8513773028b0e6a5191`)    
+    .then(res =>{
+        weatherInfo.setCurrWeather(res.data.list);
+        weatherInfo.setCity(res.data.city.name);
+    })
+    .catch(err =>{
+        console.log(err.message);
+    }); 
+  },[])
 
   //constantly listen if window is greater than 700px, if yes then load desktop view, else go into mobile view
   useEffect(()=>{

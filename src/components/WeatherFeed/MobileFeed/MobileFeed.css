@@ -1,1 +1,33 @@
-/* No CSS *//*# sourceMappingURL=MobileFeed.css.map */
+.mobile-feed-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 5fr 2fr 4fr;
+      grid-template-rows: auto 5fr 2fr 4fr;
+  border: solid yellow;
+  height: 100%;
+}
+
+.mobile-feed-location {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.mobile-feed-current-weather {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.mobile-feed-hourly-weather {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+.mobile-feed-weekly-weather {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+}
+/*# sourceMappingURL=MobileFeed.css.map */

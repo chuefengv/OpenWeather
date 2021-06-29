@@ -1,0 +1,67 @@
+.current-weather-wrapper {
+  border: solid pink;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  -ms-grid-rows: (1fr)[10];
+      grid-template-rows: repeat(10, 1fr);
+  height: 100%;
+}
+
+.current-weather-temp {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 8;
+  grid-row: 2/10;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 2fr 8fr;
+      grid-template-rows: 2fr 8fr;
+}
+
+.current-weather-temp .current-weather-description {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  font-size: 2em;
+}
+
+.current-weather-temp .current-weather-degrees {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+  font-size: 9em;
+}
+
+.current-weather-supplementary {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 8;
+  grid-row: 2/10;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+.current-weather-supplementary .current-weather-high {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  font-size: 2em;
+}
+
+.current-weather-supplementary .current-weather-low {
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+  font-size: 2em;
+}
+/*# sourceMappingURL=CurrentWeather.css.map */

@@ -1,0 +1,44 @@
+.current-weather-wrapper{
+    border: solid pink;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(10, 1fr);
+    height: 100%;
+}
+
+.current-weather-temp{
+    grid-row: 2/10;
+    grid-column: 1/2;
+
+    display: grid;
+    grid-template-rows: 2fr 8fr;
+
+    .current-weather-description{
+        justify-self: center;
+        align-self: end;
+        font-size: 2em;
+    }
+    
+    .current-weather-degrees{
+        justify-self: center;
+        align-self: baseline;
+        font-size: 9em;
+    }
+}
+
+.current-weather-supplementary{
+    grid-row: 2/10;
+    grid-column: 2/3;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    
+    .current-weather-high{
+        align-self: end;
+        font-size: 2em;
+    }
+    .current-weather-low{
+        align-self: baseline;
+        font-size: 2em;
+    }
+}
