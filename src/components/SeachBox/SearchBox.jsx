@@ -1,8 +1,9 @@
-import React, {useState}  from 'react'
+import React, {useState, useEffect}  from 'react'
 import Axios from 'axios'
 import './SearchBox.css'
 
-export default function SearchBox({weatherInfo}) {
+export default function SearchBox({weatherInfo, view}) {
+
     //zip code being input 
     const [zipcode, setZipcode] = useState(0);
     //flag to check if valid zip code
@@ -31,7 +32,7 @@ export default function SearchBox({weatherInfo}) {
 
     return (
         <div className='searchbox-wrapper'>
-            <div className='searchbox-input'>
+            <div className={view.deskMode ? 'searchbox-desktop-wrapper' : 'searchbox-mobile-wrapper'}>
                 
                 {/* if user enters invalid zipcode, send warning message */}
                 {wrongInput && <p>Not a Valid Zipcode</p>}

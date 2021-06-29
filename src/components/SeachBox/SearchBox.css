@@ -1,8 +1,18 @@
 .searchbox-wrapper {
   border: solid red;
+  display: -ms-grid;
+  display: grid;
 }
 
-.searchbox-input {
+.searchbox-desktop-wrapper {
   border: solid blue;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.searchbox-mobile-wrapper {
+  border: solid purple;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 /*# sourceMappingURL=SearchBox.css.map */

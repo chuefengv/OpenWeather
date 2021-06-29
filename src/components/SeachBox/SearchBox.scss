@@ -1,7 +1,14 @@
 .searchbox-wrapper{
     border: solid red;
+    display: grid;
 }
 
-.searchbox-input{
+.searchbox-desktop-wrapper{
     border: solid blue;
+    justify-self: end;
+}
+
+.searchbox-mobile-wrapper{
+    border: solid purple;
+    justify-self: center;
 }
