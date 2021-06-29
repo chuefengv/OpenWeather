@@ -9,6 +9,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border-bottom: gainsboro solid 1px;
 }
 
 .weekly-weather-date {
@@ -23,5 +24,18 @@
       -ms-grid-row-align: center;
       align-self: center;
   padding: 0 20px 0 0;
+}
+
+.weekly-weather-icon {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr auto;
+      grid-template-rows: 1fr auto;
+  padding: 0 0 10px 0;
+}
+
+.weekly-weather-icon div {
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 /*# sourceMappingURL=WeeklyWeather.css.map */

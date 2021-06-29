@@ -1,6 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
 body {
+  font-family: 'Raleway', sans-serif;
   margin: 0;
   padding: 0;
+  background-image: url("./assets/cloud-background.jpeg");
+  color: #f0efef;
 }
 
 h1, h2, h3, h4, a, p {

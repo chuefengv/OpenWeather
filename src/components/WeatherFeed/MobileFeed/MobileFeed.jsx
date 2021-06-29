@@ -16,7 +16,7 @@ export default function MobileFeed({weatherInfo}) {
                 <HourlyWeather weatherInfo={weatherInfo}/>
             </div>
             <div className='mobile-feed-weekly-weather'>
-                <div><h2>Weather Next 5 Days</h2></div>
+                <div><h2>Forecast For the Next 5 Days</h2></div>
                 <WeeklyWeather weatherInfo={weatherInfo}/>
             </div>
         </div>

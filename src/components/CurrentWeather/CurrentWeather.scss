@@ -34,10 +34,14 @@
     
     .current-weather-high{
         align-self: end;
+        justify-self: baseline;
         font-size: 2em;
+        border-bottom: solid black;
+        padding: 0 0 5px 0;
     }
     .current-weather-low{
         align-self: baseline;
+        justify-self: baseline;
         font-size: 2em;
     }
 }

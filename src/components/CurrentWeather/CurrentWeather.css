@@ -55,12 +55,16 @@
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
+  justify-self: baseline;
   font-size: 2em;
+  border-bottom: solid black;
+  padding: 0 0 5px 0;
 }
 
 .current-weather-supplementary .current-weather-low {
   -ms-flex-item-align: baseline;
       align-self: baseline;
+  justify-self: baseline;
   font-size: 2em;
 }
 /*# sourceMappingURL=CurrentWeather.css.map */

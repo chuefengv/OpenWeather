@@ -49,6 +49,7 @@ export default function SearchBox({weatherInfo, view}) {
                 <div onClick={()=>searchWeather()} className='searchbox-search-button'>
                     <img src={mGlass} alt='search button'></img>
                 </div>
+
             </div>
         </div>
     )

@@ -37,6 +37,7 @@
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
+  cursor: pointer;
 }
 
 .searchbox-input-box {

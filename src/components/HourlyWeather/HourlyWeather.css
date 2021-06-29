@@ -5,11 +5,7 @@
       grid-template-columns: repeat(7, 1fr);
   overflow-x: scroll;
   max-width: 100vw;
-  background-color: #d6d6d6;
-}
-
-.hourly-weather-wrapper :hover {
-  background-color: #c8c8c8;
+  background-color: rgba(255, 255, 255, 0.438);
 }
 
 .hourly-weather-temperature {
