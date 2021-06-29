@@ -4,7 +4,7 @@ import './Location.css'
 export default function Location({weatherInfo}) {
     let currentDay =  new Date();
     const daysOfWeek = ["Sunday", "Saturday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
-    const [time, setTime] = useState(0);
+    const [time, setTime] = useState();
 
     useEffect(()=>{
         var timerID = setInterval( () => updateTime(), 1000 );
@@ -14,14 +14,14 @@ export default function Location({weatherInfo}) {
     },[time])
 
     function updateTime(){
-        setTime(currentDay.toLocaleTimeString('en-GB'))
+        setTime(currentDay.toLocaleTimeString())
     }
     
     return (
         <div className='location-wrapper'>
             <div className='location-city'>{weatherInfo.currWeather.name}</div>
             <div className='location-date'>{daysOfWeek[currentDay.getDay()]}</div>
-            <div className='location-time'>{time}</div>
+            <div className='location-time'>{!time==0 && time}</div>
         </div>
     )
 }

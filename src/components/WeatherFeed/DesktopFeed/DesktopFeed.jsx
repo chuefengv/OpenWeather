@@ -1,6 +1,6 @@
 import React from 'react'
 import './DesktopFeed.css'
-import {Location, CurrentWeather, HourlyWeather, WeeklyWeather} from '../../index'
+import {Location, CurrentWeather, HourlyWeather, WeeklyWeather, AdditionalInfo} from '../../index'
 
 export default function DesktopFeed({weatherInfo}) {
     return (
@@ -18,6 +18,9 @@ export default function DesktopFeed({weatherInfo}) {
             <div className='desktop-feed-weekly-weather'>
                 <div><h2>Forecast For the Next 5 Days</h2></div>
                 <WeeklyWeather weatherInfo={weatherInfo}/>
+            </div>
+            <div className='desktop-feed-additional-info'>
+                <AdditionalInfo weatherInfo={weatherInfo}/>
             </div>
         </div>
     )

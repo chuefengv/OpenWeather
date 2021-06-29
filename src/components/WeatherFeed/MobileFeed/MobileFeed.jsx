@@ -1,5 +1,5 @@
 import React from 'react'
-import {Location, CurrentWeather, HourlyWeather, WeeklyWeather} from '../../index'
+import {Location, CurrentWeather, HourlyWeather, WeeklyWeather, AdditionalInfo} from '../../index'
 import './MobileFeed.css'
 
 export default function MobileFeed({weatherInfo}) {
@@ -18,6 +18,9 @@ export default function MobileFeed({weatherInfo}) {
             <div className='mobile-feed-weekly-weather'>
                 <div><h2>Forecast For the Next 5 Days</h2></div>
                 <WeeklyWeather weatherInfo={weatherInfo}/>
+            </div>
+            <div className='mobile-feed-additional-info'>
+                <AdditionalInfo weatherInfo={weatherInfo}/>
             </div>
         </div>
     )

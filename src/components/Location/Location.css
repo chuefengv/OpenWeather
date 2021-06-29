@@ -3,11 +3,13 @@
   display: grid;
   text-align: center;
   color: white;
+  -webkit-animation: fade 1.5s ease-in;
+          animation: fade 1.5s ease-in;
 }
 
 .location-city {
   font-size: 2.25em;
-  text-shadow: 2px 2px black;
+  text-shadow: 1px 1px black;
 }
 
 .location-date {
@@ -18,5 +20,17 @@
 .location-time {
   font-size: 1.25em;
   text-shadow: 1px 1px black;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
 }
 /*# sourceMappingURL=Location.css.map */

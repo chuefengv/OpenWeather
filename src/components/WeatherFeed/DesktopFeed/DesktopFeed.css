@@ -4,6 +4,8 @@
   -ms-grid-rows: auto auto auto 1fr;
       grid-template-rows: auto auto auto 1fr;
   height: 100%;
+  -webkit-animation: fade 1s ease-in;
+          animation: fade 1s ease-in;
 }
 
 .desktop-feed-location {
@@ -44,6 +46,18 @@
 @media only screen and (min-width: 700px) {
   .desktop-feed-weekly-weather div h2 {
     text-align: start;
+  }
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
   }
 }
 /*# sourceMappingURL=DesktopFeed.css.map */

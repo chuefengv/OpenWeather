@@ -1,0 +1,96 @@
+.additional-info-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  padding: 0 0 20px;
+  font-size: 1.1em;
+  background-color: rgba(140, 176, 217, 0.05);
+}
+
+.additional-info-row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  border-bottom: gainsboro solid 1px;
+  margin: 0 20px 0 20px;
+  padding: 15px 0 15px 0;
+}
+
+.additional-info-feel {
+  text-shadow: 1px 1px black;
+}
+
+.additional-info-humidity {
+  margin: 0 0 0 20px;
+  text-shadow: 1px 1px black;
+}
+
+.additional-info-wind {
+  text-shadow: 1px 1px black;
+}
+
+.additional-info-cloud {
+  margin: 0 0 0 20px;
+  text-shadow: 1px 1px black;
+}
+
+.additional-info-visibility {
+  text-shadow: 1px 1px black;
+}
+
+.additional-info-pressure {
+  margin: 0 0 0 20px;
+  text-shadow: 1px 1px black;
+}
+
+@media only screen and (min-width: 700px) {
+  .additional-info-wrapper {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    font-size: 1.35em;
+  }
+  .additional-info-row {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    border-bottom: none;
+  }
+  .additional-info-feel {
+    padding: 10px 0 10px 0;
+    text-shadow: 1px 1px black;
+    border-bottom: gainsboro solid 1px;
+    text-align: center;
+  }
+  .additional-info-humidity {
+    padding: 10px 0 10px 0;
+    margin: 0;
+    text-shadow: 1px 1px black;
+    text-align: center;
+  }
+  .additional-info-wind {
+    padding: 10px 0 10px 0;
+    text-shadow: 1px 1px black;
+    border-bottom: gainsboro solid 1px;
+    text-align: center;
+  }
+  .additional-info-cloud {
+    padding: 10px 0 10px 0;
+    margin: 0;
+    text-shadow: 1px 1px black;
+    text-align: center;
+  }
+  .additional-info-visibility {
+    padding: 10px 0 10px 0;
+    text-shadow: 1px 1px black;
+    border-bottom: gainsboro solid 1px;
+    text-align: center;
+  }
+  .additional-info-pressure {
+    padding: 10px 0 10px 0;
+    margin: 0;
+    text-shadow: 1px 1px black;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=AdditionalInfo.css.map */

@@ -1,9 +1,11 @@
 .mobile-feed-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto auto auto 1fr;
-      grid-template-rows: auto auto auto 1fr;
+  -ms-grid-rows: auto auto auto auto 1fr;
+      grid-template-rows: auto auto auto auto 1fr;
   height: 100%;
+  -webkit-animation: fade 1s ease-in;
+          animation: fade 1s ease-in;
 }
 
 .mobile-feed-location {
@@ -39,5 +41,17 @@
   padding: 10px 0 0 0;
   text-align: center;
   text-shadow: 1px 1px black;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
 }
 /*# sourceMappingURL=MobileFeed.css.map */

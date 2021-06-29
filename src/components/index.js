@@ -4,6 +4,7 @@ import CurrentWeather from './CurrentWeather/CurrentWeather';
 import HourlyWeather from './HourlyWeather/HourlyWeather';
 import WeeklyWeather from './WeeklyWeather/WeeklyWeather';
 import Location from './Location/Location';
+import AdditionalInfo from "./AdditionalInfo/AdditionalInfo";
 
 export{
     SearchBox,
@@ -12,4 +13,5 @@ export{
     HourlyWeather,
     WeeklyWeather,
     Location,
+    AdditionalInfo,
 }
