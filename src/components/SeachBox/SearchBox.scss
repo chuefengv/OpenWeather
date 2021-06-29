@@ -8,6 +8,12 @@
     display: grid;
     grid-template-columns: 8fr 2fr;
     grid-template-rows: auto 1fr;
+    background-color: rgba(255, 255, 255, 0.404);
+    padding: 0 20px 15px 20px;
+    margin: 0 20px 10px 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: rgb(100, 139, 180) 0px 20px 30px -10px;
 }
 
 .searchbox-mobile-wrapper{
@@ -16,6 +22,12 @@
     display: grid;
     grid-template-columns: 8fr 2fr;
     grid-template-rows: auto 1fr;
+    background-color: rgba(255, 255, 255, 0.404);
+    padding: 0 20px 15px 20px;
+    margin: 0 0 10px 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: rgb(100, 139, 180) 0px 20px 30px -10px;
 }
 
 .searchbox-search-button{
@@ -36,8 +48,9 @@
     margin: 10px 0 0 0;
     justify-self: center;
     grid-column: 1/2;
+    text-shadow: 1px 1px black;
 
     &.wrong{
-        color: red;
+        color: rgb(255, 0, 0);
     }
 }

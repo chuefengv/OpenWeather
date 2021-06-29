@@ -26,6 +26,7 @@
 
 .mobile-feed-hourly-weather div h2 {
   margin: 0 0 10px 10px;
+  text-shadow: 1px 1px black;
 }
 
 .mobile-feed-weekly-weather {
@@ -37,5 +38,6 @@
 .mobile-feed-weekly-weather div h2 {
   padding: 10px 0 0 0;
   text-align: center;
+  text-shadow: 1px 1px black;
 }
 /*# sourceMappingURL=MobileFeed.css.map */

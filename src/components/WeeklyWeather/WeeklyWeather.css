@@ -17,6 +17,7 @@
       -ms-grid-row-align: center;
       align-self: center;
   padding: 0 0 0 20px;
+  text-shadow: 1px 1px black;
 }
 
 .weekly-weather-degree {
@@ -24,6 +25,7 @@
       -ms-grid-row-align: center;
       align-self: center;
   padding: 0 20px 0 0;
+  text-shadow: 1px 1px black;
 }
 
 .weekly-weather-icon {
@@ -37,6 +39,7 @@
 .weekly-weather-icon div {
   -ms-grid-column-align: center;
       justify-self: center;
+  text-shadow: 1px 1px black;
 }
 
 @media only screen and (min-width: 700px) {

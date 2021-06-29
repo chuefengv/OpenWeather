@@ -2,18 +2,21 @@
   display: -ms-grid;
   display: grid;
   text-align: center;
-  color: black;
+  color: white;
 }
 
 .location-city {
   font-size: 2.25em;
+  text-shadow: 2px 2px black;
 }
 
 .location-date {
   font-size: 1.25em;
+  text-shadow: 1px 1px black;
 }
 
 .location-time {
   font-size: 1.25em;
+  text-shadow: 1px 1px black;
 }
 /*# sourceMappingURL=Location.css.map */

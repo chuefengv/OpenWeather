@@ -40,7 +40,7 @@ export default function SearchBox({weatherInfo, view}) {
             <div className={view.deskMode ? 'searchbox-desktop-wrapper' : 'searchbox-mobile-wrapper'}>
                 
                 {/* if user enters invalid zipcode, send warning message */}
-                {!wrongInput ? <div className='searchbox-input-instruction'>Enter a Zip Code</div> : <div className='searchbox-input-instruction wrong'>Not a Valid Zipcode</div>}
+                {!wrongInput ? <div className='searchbox-input-instruction'>Enter a Zip Code</div> : <div className='searchbox-input-instruction wrong'>*Not a Valid Zipcode*</div>}
 
                 <div className='searchbox-input-box'>
                     <input type='text' placeholder='90210' onChange={(e)=>handleZipChange(e)} maxLength="5"/>
