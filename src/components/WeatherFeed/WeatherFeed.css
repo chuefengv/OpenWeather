@@ -1,1 +1,10 @@
-/* No CSS *//*# sourceMappingURL=WeatherFeed.css.map */
+.weatherfeed-wrapper {
+  margin: 90px 0 0 0;
+}
+
+@media only screen and (min-width: 700px) {
+  .weatherfeed-wrapper {
+    margin: 50px 0 0 0;
+  }
+}
+/*# sourceMappingURL=WeatherFeed.css.map */

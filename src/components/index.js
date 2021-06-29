@@ -5,6 +5,7 @@ import HourlyWeather from './HourlyWeather/HourlyWeather';
 import WeeklyWeather from './WeeklyWeather/WeeklyWeather';
 import Location from './Location/Location';
 import AdditionalInfo from "./AdditionalInfo/AdditionalInfo";
+import Footer from "./Footer/Footer";
 
 export{
     SearchBox,
@@ -14,4 +15,5 @@ export{
     WeeklyWeather,
     Location,
     AdditionalInfo,
+    Footer
 }

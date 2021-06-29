@@ -1,0 +1,18 @@
+.footer-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 0 20px 0;
+}
+
+.footer-logo {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.footer-logo img {
+  width: 120px;
+}
+/*# sourceMappingURL=Footer.css.map */

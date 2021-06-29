@@ -1,11 +1,11 @@
 import './App.css';
 import Axios from 'axios'
 import {useState, useEffect} from 'react';
-import {SearchBox, WeatherFeed} from './components/index';
+import {SearchBox, WeatherFeed, Footer} from './components/index';
 function App() {
 
   //get the current window size, flag to determine if mobile or desktop view
-  const [deskMode, setDeskMode] = useState((window.innerWidth>=700) ? true : false);
+  const [deskMode, setDeskMode] = useState((window.innerWidth>=800) ? true : false);
   //state variable to hold current weather information
   const [currWeather, setCurrWeather] = useState([]);
   //state variable to hold weekly weather information
@@ -32,7 +32,7 @@ function App() {
   //constantly listen if window is greater than 700px, if yes then load desktop view, else go into mobile view
   useEffect(()=>{
       function renderFeed(){
-          window.innerWidth>=700 ? setDeskMode(true) : setDeskMode(false)
+          window.innerWidth>=800 ? setDeskMode(true) : setDeskMode(false)
       }
       window.addEventListener('resize',renderFeed)
   })
@@ -41,6 +41,7 @@ function App() {
     <div className="container">
         <SearchBox weatherInfo={weatherInfo} view={view}/>
         <WeatherFeed weatherInfo={weatherInfo} view={view}/>
+        <Footer />
     </div>
   );
 }
