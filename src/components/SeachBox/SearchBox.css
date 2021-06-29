@@ -5,9 +5,8 @@
 }
 
 .searchbox-desktop-wrapper {
-  -ms-grid-column-align: end;
-      justify-self: end;
-  position: fixed;
+  -ms-grid-column-align: center;
+      justify-self: center;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 8fr 2fr;
@@ -26,7 +25,6 @@
 .searchbox-mobile-wrapper {
   -ms-grid-column-align: center;
       justify-self: center;
-  position: fixed;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 8fr 2fr;

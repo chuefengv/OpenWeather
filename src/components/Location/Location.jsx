@@ -3,10 +3,13 @@ import './Location.css'
 
 export default function Location({weatherInfo}) {
     let currentDay =  new Date();
+    //array of days of the week, index will be determined by Date()
     const daysOfWeek = ["Sunday", "Saturday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+    //keep track of constantly updating time
     const [time, setTime] = useState(0);
 
     useEffect(()=>{
+        //every second, update the time
         var timerID = setInterval( () => updateTime(), 1000 );
         return function cleanup() {
             clearInterval(timerID);

@@ -5,8 +5,7 @@
 }
 
 .searchbox-desktop-wrapper{
-    justify-self: end;
-    position: fixed;
+    justify-self: center;
 
     display: grid;
     grid-template-columns: 8fr 2fr;
@@ -21,7 +20,6 @@
 
 .searchbox-mobile-wrapper{
     justify-self: center;
-    position: fixed;
 
     display: grid;
     grid-template-columns: 8fr 2fr;
