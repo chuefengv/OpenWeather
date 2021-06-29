@@ -8,17 +8,15 @@ function App() {
   const [deskMode, setDeskMode] = useState((window.innerWidth>=900) ? true : false);
   //state variable to hold city weather information
   const [currWeather, setCurrWeather] = useState([]);
-  const [city, setCity] = useState("")
 
   //prop object for easy passing
-  const weatherInfo = {currWeather, setCurrWeather, city, setCity}
+  const weatherInfo = {currWeather, setCurrWeather}
   const view = {deskMode, setDeskMode}
 
   useEffect(()=>{
-    Axios.get(`https://api.openweathermap.org/data/2.5/forecast?zip=90210&appid=1364ff82ee89c8513773028b0e6a5191`)    
+    Axios.get(`https://api.openweathermap.org/data/2.5/weather?zip=90210&appid=1364ff82ee89c8513773028b0e6a5191`)    
     .then(res =>{
-        weatherInfo.setCurrWeather(res.data.list);
-        weatherInfo.setCity(res.data.city.name);
+        weatherInfo.setCurrWeather(res.data);
     })
     .catch(err =>{
         console.log(err.message);

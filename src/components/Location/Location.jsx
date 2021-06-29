@@ -19,7 +19,7 @@ export default function Location({weatherInfo}) {
     
     return (
         <div className='location-wrapper'>
-            <div className='location-city'>{weatherInfo.city}</div>
+            <div className='location-city'>{weatherInfo.currWeather.name}</div>
             <div className='location-date'>{daysOfWeek[currentDay.getDay()]}</div>
             <div className='location-time'>{time}</div>
         </div>
