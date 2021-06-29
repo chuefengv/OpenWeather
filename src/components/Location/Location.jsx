@@ -3,7 +3,7 @@ import './Location.css'
 
 export default function Location({weatherInfo}) {
     let currentDay =  new Date();
-    const daysOfWeek = ["Sunday", "Saturday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+    const daysOfWeek = ["Sunday", "Saturday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
     const [time, setTime] = useState(0);
 
     useEffect(()=>{

@@ -3,10 +3,9 @@ import './HourlyWeather.css'
 
 export default function HourlyWeather({weatherInfo}) {
 
-
     return (
         <div className='hourly-weather-wrapper'>
-            {weatherInfo.weeklyWeather && weatherInfo.weeklyWeather.slice(0,7).map((hour, i)=>{
+            {weatherInfo.weeklyWeather.slice(0,7).map((hour, i)=>{
                 return(
                     <div key={i} className='hourly-weather-temperature'>
                         <div className='hourly-weather-time'>

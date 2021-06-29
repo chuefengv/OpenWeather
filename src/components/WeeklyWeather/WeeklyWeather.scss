@@ -1,0 +1,15 @@
+.weekly-weather-temperature{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.weekly-weather-date{
+    align-self: center;
+    padding: 0 0 0 20px;
+}
+
+.weekly-weather-degree{
+    align-self: center;
+    padding: 0 20px 0 0;
+}

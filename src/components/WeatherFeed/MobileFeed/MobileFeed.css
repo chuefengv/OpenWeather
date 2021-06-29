@@ -33,4 +33,9 @@
   -ms-grid-row-span: 1;
   grid-row: 4/5;
 }
+
+.mobile-feed-weekly-weather div h2 {
+  padding: 10px 0 0 0;
+  text-align: center;
+}
 /*# sourceMappingURL=MobileFeed.css.map */
