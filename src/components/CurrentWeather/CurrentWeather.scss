@@ -45,3 +45,22 @@
         font-size: 2em;
     }
 }
+
+@media only screen and (min-width: 700px){
+    .current-weather-wrapper{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+    }
+
+    .current-weather-temp{
+        grid-row:1/2;
+        padding: 0 0 15px 0;
+    }
+
+    .current-weather-supplementary{
+        grid-row: 2/3;
+        grid-column: 1/2;
+        justify-self: center;
+        padding: 0 0 10px 0;
+    }
+}

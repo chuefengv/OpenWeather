@@ -1,18 +1,36 @@
 .hourly-weather-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[7];
-      grid-template-columns: repeat(7, 1fr);
+  -ms-grid-columns: (auto)[7];
+      grid-template-columns: repeat(7, auto);
   overflow-x: scroll;
   max-width: 100vw;
-  background-color: rgba(255, 255, 255, 0.438);
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 .hourly-weather-temperature {
-  width: 125px;
   display: -ms-grid;
   display: grid;
-  text-align: center;
   padding: 10px 0 10px 0;
+  border-right: white solid 1px;
+}
+
+.hourly-weather-temperature .hourly-weather-time {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.hourly-weather-temperature .hourly-weather-description {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.hourly-weather-temperature .hourly-weather-description div {
+  text-align: center;
+}
+
+.hourly-weather-temperature .hourly-weather-degree {
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 /*# sourceMappingURL=HourlyWeather.css.map */

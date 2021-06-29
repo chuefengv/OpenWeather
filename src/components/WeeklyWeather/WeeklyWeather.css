@@ -38,4 +38,29 @@
   -ms-grid-column-align: center;
       justify-self: center;
 }
+
+@media only screen and (min-width: 700px) {
+  .weekly-weather-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+    -ms-grid-rows: auto auto 1fr;
+        grid-template-rows: auto auto 1fr;
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+  .weekly-weather-temperature {
+    display: -ms-grid;
+    display: grid;
+    border-right: white solid 1px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10px 0 10px 0;
+  }
+  .weekly-weather-degree {
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+}
 /*# sourceMappingURL=WeeklyWeather.css.map */

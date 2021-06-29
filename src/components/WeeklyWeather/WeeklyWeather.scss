@@ -1,6 +1,3 @@
-.weekly-weather-wrapper{
-
-}
 
 .weekly-weather-temperature{
     display: flex;
@@ -26,5 +23,26 @@
     div{
         justify-self: center;
         
+    }
+}
+
+@media only screen and (min-width: 700px){
+    .weekly-weather-wrapper{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: auto auto 1fr;
+        background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    .weekly-weather-temperature{
+        display: grid;
+        border-right: white solid 1px;
+        justify-content: center;
+        padding: 10px 0 10px 0;
+
+    }
+
+    .weekly-weather-degree{
+        justify-self: end;
     }
 }

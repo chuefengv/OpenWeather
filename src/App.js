@@ -5,7 +5,7 @@ import {SearchBox, WeatherFeed} from './components/index';
 function App() {
 
   //get the current window size, flag to determine if mobile or desktop view
-  const [deskMode, setDeskMode] = useState((window.innerWidth>=900) ? true : false);
+  const [deskMode, setDeskMode] = useState((window.innerWidth>=700) ? true : false);
   //state variable to hold current weather information
   const [currWeather, setCurrWeather] = useState([]);
   //state variable to hold weekly weather information

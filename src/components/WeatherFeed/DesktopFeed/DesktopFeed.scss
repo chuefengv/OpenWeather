@@ -1,0 +1,45 @@
+.desktop-feed-wrapper{
+    display: grid;
+    grid-template-rows: auto auto auto 1fr;
+    height: 100%;
+}
+
+.desktop-feed-location{
+    grid-row: 1/2;
+
+}
+
+.desktop-feed-current-weather{
+    grid-row: 2/3;
+
+}
+
+.desktop-feed-hourly-weather{
+    grid-row: 3/4;
+
+    div{
+        h2{
+            margin: 0 0 10px 10px;
+        }
+    }
+}
+
+.desktop-feed-weekly-weather{
+    grid-row: 4/5;
+    div{
+        h2{
+            padding: 10px 0 10px 10px;
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (min-width: 700px){
+    .desktop-feed-weekly-weather{
+        div{
+            h2{
+                text-align: start;
+            }
+        }
+    }
+}

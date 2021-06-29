@@ -1,1 +1,47 @@
-/* No CSS *//*# sourceMappingURL=DesktopFeed.css.map */
+.desktop-feed-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto auto 1fr;
+      grid-template-rows: auto auto auto 1fr;
+  height: 100%;
+}
+
+.desktop-feed-location {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.desktop-feed-current-weather {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.desktop-feed-hourly-weather {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+.desktop-feed-hourly-weather div h2 {
+  margin: 0 0 10px 10px;
+}
+
+.desktop-feed-weekly-weather {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4/5;
+}
+
+.desktop-feed-weekly-weather div h2 {
+  padding: 10px 0 10px 10px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 700px) {
+  .desktop-feed-weekly-weather div h2 {
+    text-align: start;
+  }
+}
+/*# sourceMappingURL=DesktopFeed.css.map */

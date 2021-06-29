@@ -2,6 +2,7 @@
   display: -ms-grid;
   display: grid;
   text-align: center;
+  color: black;
 }
 
 .location-city {

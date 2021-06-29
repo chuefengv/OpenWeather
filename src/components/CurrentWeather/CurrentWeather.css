@@ -67,4 +67,30 @@
   justify-self: baseline;
   font-size: 2em;
 }
+
+@media only screen and (min-width: 700px) {
+  .current-weather-wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr auto;
+        grid-template-rows: 1fr auto;
+  }
+  .current-weather-temp {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    padding: 0 0 15px 0;
+  }
+  .current-weather-supplementary {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    padding: 0 0 10px 0;
+  }
+}
 /*# sourceMappingURL=CurrentWeather.css.map */

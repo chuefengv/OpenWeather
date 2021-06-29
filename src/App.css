@@ -5,6 +5,8 @@ body {
   padding: 0;
   background-image: url("./assets/cloud-background.jpeg");
   color: #f0efef;
+  -webkit-animation: fade 1s ease-in;
+          animation: fade 1s ease-in;
 }
 
 h1, h2, h3, h4, a, p {
@@ -18,5 +20,17 @@ h1, h2, h3, h4, a, p {
   display: grid;
   -ms-grid-rows: auto 1fr;
       grid-template-rows: auto 1fr;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
 }
 /*# sourceMappingURL=App.css.map */

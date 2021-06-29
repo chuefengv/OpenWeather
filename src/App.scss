@@ -5,6 +5,7 @@ body{
     padding: 0;
     background-image: url('./assets/cloud-background.jpeg');
     color: rgb(240, 239, 239);
+    animation: fade 1s ease-in;
 }
 
 h1, h2, h3, h4, a, p{
@@ -16,4 +17,10 @@ h1, h2, h3, h4, a, p{
     height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr;
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
 }
